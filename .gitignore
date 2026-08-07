@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Data (büyük veya ham veri dosyalarını repoya koyma)
+*.csv
+*.zip
+data/raw/
+
+# Jupyter (ileride notebook eklersen diye hazır dursun)
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

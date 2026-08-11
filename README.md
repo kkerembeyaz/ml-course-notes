@@ -6,9 +6,11 @@ Türkiye Yapay Zeka Akademisi Makine Öğrenmesi kursu kapsamında yazdığım k
 
 | Klasör | Konu |
 |---|---|
-| `01_data_preprocessing` | Eksik veri işleme, ölçeklendirme (scaling), encoding, veri temizleme |
-| `02_feature_engineering` | Özellik türetme, seçimi ve dönüştürme teknikleri |
-| `03_supervised_learning` | Regresyon ve sınıflandırma algoritmaları (scikit-learn) |
+| `1_data_preprocessing` | Eksik veri tespiti/doldurma, IQR ile aykırı değer tespiti, label/one-hot encoding, train-test-validation split, standardization/normalization |
+| `2_feature_engineering` | Yeni öznitelik üretme (feature extraction), korelasyon bazlı öznitelik seçimi (feature selection) |
+| `3_supervised_learning` | Logistic Regression (UCI Heart Disease), Linear/Polynomial/Lasso/Ridge Regression (sentetik veri), KNN (Breast Cancer veri seti) |
+
+Her klasörün içinde, o bölümdeki kodların amacını ve adımlarını anlatan ayrı bir `README.md` bulunuyor.
 
 ## Kullanılan Araçlar
 

@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Kerem\OneDrive\Masaüstü\ML\3_supervised_learning\venv
+set VIRTUAL_ENV=C:\Users\Kerem\OneDrive\Masaüstü\Kerem\ml-course-notes\3_supervised_learning\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

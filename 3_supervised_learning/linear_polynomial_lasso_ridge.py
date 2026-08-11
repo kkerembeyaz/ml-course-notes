@@ -84,7 +84,7 @@ lasso_model = Pipeline(
 ridge_model = Pipeline(
     [
         ("scaler", StandardScaler()),
-        ("lasso", Ridge(alpha=0.1))
+        ("ridge", Ridge(alpha=0.1))
     ]
 )
 #6.Modelleri eğit(training) ve tahmin(prediction) yap.

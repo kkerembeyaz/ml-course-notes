@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Kerem\OneDrive\Masaüstü\ML\3_supervised_learning\venv"
+VIRTUAL_ENV="C:\Users\Kerem\OneDrive\Masaüstü\Kerem\ml-course-notes\3_supervised_learning\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

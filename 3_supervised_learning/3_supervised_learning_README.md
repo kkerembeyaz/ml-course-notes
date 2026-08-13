@@ -33,6 +33,41 @@ Regresyon ve sınıflandırma algoritmalarının farklı veri setleri üzerinde 
 7. Modellerin performans karşılaştırması
 8. Lasso ile feature selection
 
+## SVM (Support Vector Machine)
+
+**Amaç:** Digits veri seti kullanarak SVM ile çok sınıflı bir sınıflandırma problemi çözmek.
+
+**Veri Seti:** Digits veri seti, 0-9 arasındaki rakamları temsil eden 8x8 boyutunda gri seviyeli görüntülerden oluşur. 1797 örnek (sample) içerir; her örnekte 8x8 pikselden gelen 64 öznitelik (feature) vardır.
+
+**Plan:**
+1. Veri setinin yüklenmesi ve temel bilgilerin incelenmesi
+2. Örnek görüntülerin görselleştirilmesi
+3. Özellik ve hedef değişkenlerin ayrılması
+4. Eğitim ve test veri setlerinin oluşturulması
+5. SVM modelinin oluşturulması
+6. Modelin eğitilmesi
+7. Test verisi üzerinde tahmin yapılması
+8. Model performansının sınıflandırma raporu ile değerlendirilmesi
+
+## Decision Tree & Random Forest
+
+**Amaç:**
+1. Iris veri seti kullanarak karar ağacı ve random forest algoritmalarını geliştirmek
+2. Karar ağacını görselleştirmek ve öznitelik önemini (feature importance) incelemek
+
+**Veri Seti:** Iris veri seti, 3 farklı çiçek türünü içerir (setosa, versicolor, virginica). 4 öznitelik (sepal length, petal length, sepal width, petal width) ve 150 örnek içerir.
+
+**Plan:**
+1. Veri setinin yüklenmesi ve incelenmesi
+2. Feature ve target değişkenlerin tanımlanması
+3. Eğitim ve test veri setlerinin oluşturulması
+4. Karar ağacı ve random forest modellerinin oluşturulması
+5. Test verisi ile tahmin yapılması
+6. Model başarımının accuracy ile ölçülmesi
+7. Karar ağacı sonuçlarının confusion matrix ile görselleştirilmesi
+8. Karar ağacının görselleştirilmesi
+9. Karar ağacı feature importance incelenmesi
+
 ## KNN (K-Nearest Neighbors)
 
 **Amaç:** Göğüs kanseri (Breast Cancer) veri setini kullanarak KNN algoritması ile sınıflandırma yapmak. Modelin doğruluk oranını hesaplamak ve farklı K değerleri için hiperparametre araması yapmak.
@@ -46,3 +81,4 @@ Regresyon ve sınıflandırma algoritmalarının farklı veri setleri üzerinde 
 - Doğruluk oranı ve confusion matrix
 - Hiperparametre ayarlanması (K değeri optimizasyonu)
 - Sonuçların grafiksel gösterilmesi
+

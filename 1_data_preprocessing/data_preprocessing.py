@@ -78,7 +78,6 @@ print(f"Aykırı değerler çıktıktan sonra: \n {df_clean}") #Deneyim yılı 1
 #Label Encoding ve One-Hot Encoding
 
 label_encoder = LabelEncoder()
-
 # Hedef Değişkeni Sayısal Hale Getir
 y = label_encoder.fit_transform(df_clean["satin_aldi"])
 

@@ -9,6 +9,8 @@ Türkiye Yapay Zeka Akademisi Makine Öğrenmesi kursu kapsamında yazdığım k
 | `1_data_preprocessing` | Eksik veri tespiti/doldurma, IQR ile aykırı değer tespiti, label/one-hot encoding, train-test-validation split, standardization/normalization |
 | `2_feature_engineering` | Yeni öznitelik üretme (feature extraction), korelasyon bazlı öznitelik seçimi (feature selection) |
 | `3_supervised_learning` | Logistic Regression (UCI Heart Disease), Linear/Polynomial/Lasso/Ridge Regression (sentetik veri), KNN (Breast Cancer), SVM (Digits), Decision Tree & Random Forest (Iris) |
+| `4_customer_churn_pred` | Telco Customer Churn — uçtan uca sınıflandırma projesi: preprocessing, encoding, 5-fold CV ile model karşılaştırması (Logistic Regression, KNN, Decision Tree, Random Forest, SVM), final değerlendirme |
+| `5_unsupervised_learning` | K-Means & Agglomerative Clustering (sentetik veri, dendrogram) — devam ediyor |
 
 Her klasörün içinde, o bölümdeki kodların amacını ve adımlarını anlatan ayrı bir `README.md` bulunuyor.
 
@@ -17,6 +19,7 @@ Her klasörün içinde, o bölümdeki kodların amacını ve adımlarını anlat
 - Python
 - pandas, NumPy
 - scikit-learn
+- scipy
 - matplotlib / seaborn
 
 ## Notlar

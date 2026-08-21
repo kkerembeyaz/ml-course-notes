@@ -1,23 +1,29 @@
-7. Cross Validation (Çapraz Doğrulama)
-Bu bölümde, model performansını tek bir train/test bölümüne bağlı kalmadan daha güvenilir şekilde değerlendirmek için üç farklı çapraz doğrulama yöntemini karşılaştırıyorum: K-Fold, Stratified K-Fold ve Leave-One-Out (LOOCV).
-İçerik
-`cross_validation.py`
-Iris veri seti (150 örnek, 4 öznitelik, 3 sınıf) üzerinde Decision Tree sınıflandırıcısı ile üç CV yönteminin karşılaştırmalı uygulaması:
+# ML Course Notes
 
-1. Veri Yükleme — Iris veri setinin yüklenmesi
-2. Model Tanımlama — Derinliği kısıtlanmış (`max_depth=5`) bir Decision Tree tanımlandı
-3. K-Fold — Veri 5 eşit parçaya (fold) rastgele bölünerek çapraz doğrulama yapıldı
-4. Stratified K-Fold — Her fold'da sınıf oranlarının korunduğu çapraz doğrulama yapıldı
-5. Leave-One-Out — Her örneğin sırayla tek başına test verisi olduğu, n adet fold içeren çapraz doğrulama yapıldı
-6. Üç yöntemin mean/std accuracy skorları karşılaştırıldı
+Türkiye Yapay Zeka Akademisi Makine Öğrenmesi kursu kapsamında yazdığım kod ve notlar. Kurs ilerledikçe yeni klasörler eklenerek büyütülecektir.
 
-Kullanılan Kütüphaneler
+## İçerik
 
-* scikit-learn (`DecisionTreeClassifier`, `KFold`, `StratifiedKFold`, `LeaveOneOut`, `cross_val_score`)
-* numpy
+| Klasör | Konu |
+|---|---|
+| `1_data_preprocessing` | Eksik veri tespiti/doldurma, IQR ile aykırı değer tespiti, label/one-hot encoding, train-test-validation split, standardization/normalization |
+| `2_feature_engineering` | Yeni öznitelik üretme (feature extraction), korelasyon bazlı öznitelik seçimi (feature selection) |
+| `3_supervised_learning` | Logistic Regression (UCI Heart Disease), Linear/Polynomial/Lasso/Ridge Regression (sentetik veri), KNN (Breast Cancer), SVM (Digits), Decision Tree & Random Forest (Iris) |
+| `4_customer_churn_pred` | Telco Customer Churn — uçtan uca sınıflandırma projesi: preprocessing, encoding, 5-fold CV ile model karşılaştırması (Logistic Regression, KNN, Decision Tree, Random Forest, SVM), final değerlendirme |
+| `5_unsupervised_learning` | K-Means & Agglomerative Clustering (sentetik veri, dendrogram) — devam ediyor |
+| `6_dimension_reduction` | PCA & t-SNE ile boyut indirgeme (Iris, 4 boyuttan 2 boyuta), scatter plot ile karşılaştırmalı görselleştirme |
+| `7_cross_validation` | K-Fold, Stratified K-Fold & Leave-One-Out (LOOCV) ile çapraz doğrulama karşılaştırması (Iris, Decision Tree) |
 
-Notlar
+Her klasörün içinde, o bölümdeki kodların amacını ve adımlarını anlatan ayrı bir README.md bulunuyor.
 
-* Dengeli veri setlerinde (iris gibi) K-Fold ve Stratified K-Fold sonuçları birbirine yakın çıkar; Stratified'in asıl avantajı sınıf dağılımı dengesiz olan veri setlerinde ortaya çıkar.
-* LOOCV, her örneği ayrı ayrı test ettiği için en düşük bias'lı performans tahminini verir, ancak standart sapması diğer yöntemlerle doğrudan kıyaslanamaz (0/1 skorlardan hesaplandığı için farklı bir varyans kaynağını ölçer) ve hesaplama maliyeti büyük veri setlerinde yüksektir.
-* CV yöntemi seçimi, veri seti büyüklüğü, sınıf dengesi ve hesaplama bütçesine göre yapılmalıdır.
+## Kullanılan Araçlar
+
+- Python
+- pandas, NumPy
+- scikit-learn
+- scipy
+- matplotlib / seaborn
+
+## Notlar
+
+Bu repo öğrenme sürecimin bir kaydıdır; kod parçaları kurs alıştırmalarını ve kişisel deneylerimi içerir. İlerleyen bölümler (model değerlendirme, hyperparameter tuning, SHAP/LIME vb.) eklendikçe güncellenecektir.
